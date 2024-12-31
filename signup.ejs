@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css" />
+    <style>
+          *{
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        #main{
+            height: 100vh;
+            width: 100vw;
+            background-color: cadetblue;
+
+        }
+        #form{
+            padding-top: 50px;
+        }
+        #table{
+            padding-top: 30px;
+            
+        }
+        table td{
+            padding: 5px;
+            font-weight: 600;
+        }
+        input{
+            border-radius: 10px;
+            
+        }
+        a{
+            color:rgb(104, 10, 10);
+            text-shadow:2px 1px #151515;
+        }
+    </style>
+</head>
+<body>
+    <ul class="nav bg-dark justify-content-evenly " style="height: 40px;">
+        <marquee class="text-light  behavior="" direction="" scrollamount="10"><h3>Welcome To WebSite!</h3></marquee>
+      
+      </ul>
+    <div id="main">
+    <form action="signupData" method="post" id="form">
+        <table style="margin: auto;gap: 100px;" id="table">
+            <h1 style="text-align: center;">Welcome to Register Page</h1>
+            <tr>
+                <td>Enter UserName:</td><td><input type="text" name="userName" ></td>
+            </tr>
+            <tr>
+                <td>Enter Email :</td><td><input type="email" name="email"></td>
+            </tr>
+            <tr>
+                <td>Enter PassWord:</td><td><input type="password" name="password"></td>
+            </tr>
+            <tr>
+                <td></td><td><input class="btn btn-success" type="submit" value="SignUp"></td>
+            </tr>
+            <tr>
+                <td>Already Have Account ?</td><td><a href="./login" >Login to Account</a></td>
+            </tr>
+        </table>
+
+    </form>
+</div>
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css" />
+    <style>
+        *{
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        #main{
+            height: 100vh;
+            width: 100vw;
+            background-color: cadetblue;
+
+        }
+        #form{
+            padding-top: 50px;
+        }
+        #table{
+            padding-top: 30px;
+            
+        }
+        table td{
+            padding: 4px;
+            font-weight: 600;
+        }
+        input{
+            border-radius: 10px;
+        }
+        a{
+            color: rgb(104, 10, 10);
+            text-shadow:1px 1px #151515
+        }
+    </style>
+</head>
+<body>
+    <ul class="nav bg-dark justify-content-evenly">
+        <li class="nav-item">
+            <a class="nav-link " href="./login">Welcom</a>
+          </li>
+        <li class="nav-item">
+          <a class="nav-link " href="./login">Login</a>
+        </li>
+    
+        <li class="nav-item">
+          <a class="nav-link" href="./signup">SignUp</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./login">Happy Coding</a>
+        </li>
+      </ul>
+    <div id="main" >
+    <form action="loginData" method="post" id="form">
+        
+        <table style="margin: auto;" id="table">
+            <h1 style="text-align: center;font-weight:500;">Login To Website</h1>
+            <tr>
+                <td>UserName:</td><td><input type="text" name="userName"></td>
+            </tr>
+            <tr>
+                <td>Password:</td><td><input  type="password" name="password"></td>
+            </tr>
+            <tr>
+                <td></td><td><input class="btn btn-success" type="submit" value="Login"></td>
+            </tr>
+            <tr>
+                <td>Don't Have Account ?</td><td><a href="./signup">Create Account</a></td>
+            </tr>
+        </table>
+        <marquee class="text-secondary  behavior="" direction="right" scrollamount="10"><h3>Welcome To WebSite!</h3></marquee>
+
+    </form>
+    </div>
+</body>
+</html>

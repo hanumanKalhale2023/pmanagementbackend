@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+ 
+    <link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css" />
+    <style>
+             *{
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+         
+        }
+         #main{
+            height: 100vh;
+            width: 100vw;
+            background-color: cadetblue;
+
+        }
+    </style>
+</head>
+<ul class="nav bg-dark justify-content-evenly">
+    <li class="nav-item">
+        <a class="nav-link " href="./login">Add Data</a>
+      </li>
+    <li class="nav-item">
+      <a class="nav-link " href="./get">Get Data</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="./update">Update</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="./delete">Delete</a>
+    </li>
+  </ul>
+<body id="main">
+    <form action="delete-product" method="post">
+        <h3 style="margin-left: 350px;">Delete Product By Name </h3>
+        <label for="" style="margin-left: 300px;padding: 20px;">Enter Product Name:-</label> <input type="text" name="productName" placeholder="enter product name for delete" ><br>
+        <input style="margin-left: 420px;" class="btn btn-danger " type="submit" value="Delete Record">
+    </form>
+
+</body>
+</html>

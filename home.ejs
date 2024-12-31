@@ -1,0 +1,59 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+    <link href="../css/style.css" rel="stylesheet" type="text/css">
+    <link href="../css/style.css" rel="stylesheet" type="text/css">
+ 
+    <link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css" />
+    <style>
+           *{
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+         
+        }
+    </style>
+</head>
+<ul class="nav bg-dark justify-content-evenly">
+    <li class="nav-item">
+        <a class="nav-link " href="./home">Add Data</a>
+      </li>
+    <li class="nav-item">
+      <a class="nav-link " href="./get">Get Data</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="./update">Update</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="./delete">Delete</a>
+    </li>
+  </ul>
+<body id="main">
+<form action="add" method="post" >
+    <h3 style="margin-left: 450px; padding: 20px; text-shadow: 90%;">Add Data</h3>
+    <table class="mx-auto"  >
+        <tr>
+            <td>Enter Product Id</td><td><input type="number" placeholder="Enter Product Id" name="productId"> </td>
+        </tr>
+        <tr>
+            <td>Enter Product Name</td><td><input type="text" placeholder="Enter Product Name" name="productName"> </td>
+        </tr>
+        <tr>
+            <td>Enter Product Price</td><td><input type="number" placeholder="Enter Product Price" name="productPrice"> </td>
+        </tr>
+        <tr>
+            <td>Enter Product Stock</td><td><input type="number" placeholder="Enter Product Stock" name="productStock"></td>
+        </tr>
+        <tr>
+            <td></td><td><input class="btn btn-success ms-5" type="submit" value="Add Data"></td>
+            
+        </tr>
+    </table>
+    <marquee class="text-secondary  behavior="" direction="right" scrollamount="10"><h3>Welcome To WebSite!</h3></marquee>
+
+</form>
+
+</body>
+</html>

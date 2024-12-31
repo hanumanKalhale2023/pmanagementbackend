@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css" />
+    <style>
+             *{
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+         
+        }
+      #main {
+        height: 100vh;
+        width: 100vw;
+        background-color: cadetblue;
+      }
+    </style>
+  </head>
+  <ul class="nav bg-dark justify-content-evenly">
+    <li class="nav-item">
+      <a class="nav-link" href="./login">Add Data</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="./get">Get Data</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="./update">Update</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="./delete">Delete</a>
+    </li>
+  </ul>
+  <body id="main">
+    <h3 style="margin-left: 290px; padding: 15px">
+      Update The product by Product Name
+    </h3>
+    <form action="update-record" method="post">
+      <table class="mx-auto" style="padding: 10px">
+        <tr>
+          <td>Enter the productId</td>
+          <td><input type="number" name="productId" /></td>
+        </tr>
+        <tr>
+          <td>Enter the productName</td>
+          <td><input type="text" name="productName" /></td>
+        </tr>
+        <tr>
+          <td>Enter the productPrice</td>
+          <td><input type="number" name="productPrice" /></td>
+        </tr>
+        <tr>
+          <td>Enter the productStock</td>
+          <td><input type="number" name="productStock" /></td>
+        </tr>
+      </table>
+      <input
+        style="margin-left: 450px"
+        class="btn btn-warning"
+        type="submit"
+        value="update-record"
+      />
+    </form>
+
+  </body>
+</html>
